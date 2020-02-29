@@ -20,6 +20,8 @@ Example sequence can be found in the images folder. For details see Jupyter Note
 *Source: Patent US20170114146A1, Seq #29.*
 
 ## Simple Invokation
+Take a snapshot of the sequence image. **Leave out the headers**. (see Example_Seq1.png in the images folder for an example of such image). Then invoke with: 
+
 ```python
 result=PatentSeq("Example_Seq1.png")
 
