@@ -17,10 +17,14 @@ Install the following modules before running the script:
 # Examples of Usage
 Example sequence can be found in the images folder. For details see Jupyter Notebook. 
 
-*Source: Patent US20170114146A1, Seq #29.*
+*Source of example used here: Patent US20170114146A1, Seq #29.*
 
-## Simple Invokation
-Take a snapshot of the sequence image. **Be sure to LEAVE OUT the headers**. (see Example_Seq1.png in the images folder for an example of such image). Then invoke with: 
+## Image Preparation
+Take a snapshot of the sequence image. **Be sure to LEAVE OUT the headers**. Below is an exmple of such image (available in images folder):
+
+![](https://github.com/xinyu-dev/PatentSeq/blob/master/images/Example_Seq1.png)
+
+## Simple Invokations
 
 ```python
 result=PatentSeq("Example_Seq1.png")
@@ -34,4 +38,30 @@ print(result[1])
 
 print("\n>Seq in 3-letter code")
 print(result[2])
+```
+
+Example output: 
+```
+>Seq shown in string 
+Asp Ile Gln Leu Thr Gln Ser Pro Ser Thr Leu Ser Ala Ser Val Gly
+1                    5                         10                        15
+Asp Arg Val Thr Ile Thr Cys Arg Ala Ser Glu Ser Leu Asp Asn Tyr
+20                        25                        30
+Gly Ile Arg Phe Leu Thr Trp Phe Gln Gln Lys Pro Gly Lys Ala Pro
+35                 40                 45
+Lys Leu Leu Met Tyr Ala Ala Ser Asn Gln Gly Ser Gly Val Pro Ser
+50                 55                 60
+Arg Phe Ser Gly Ser Gly Ser Gly Thr Glu Phe Thr Leu Thr Ile Ser
+65                        70                        75                        80
+Ser Leu Gln Pro Asp Asp Phe Ala Thr Tyr Tyr Cys Gln Gln Thr Lys
+85                  90                  95
+Glu Val Pro Trp Ser Phe Gly Gln Gly Thr Lys Val Glu Val Lys
+100                105                110
+
+>Seq in 1-letter code
+DIQLTQSPSTLSASVGDRVTITCRASESLDNYGIRFLTWFQQKPGKAPKLLMYAASNQGSGVPSRFSGSGSGTEFTLTISSLQPDDFATYYCQQTKEVPWSFGQGTKVEVK
+
+>Seq in 3-letter code
+AspIleGlnLeuThrGlnSerProSerThrLeuSerAlaSerValGlyAspArgValThrIleThrCysArgAlaSerGluSerLeuAspAsnTyrGlyIleArgPheLeuThrTrpPheGlnGlnLysProGlyLysAlaProLysLeuLeuMetTyrAlaAlaSerAsnGlnGlySerGlyValProSerArgPheSerGlySerGlySerGlyThrGluPheThrLeuThrIleSerSerLeuGlnProAspAspPheAlaThrTyrTyrCysGlnGlnThrLysGluValProTrpSerPheGlyGlnGlyThrLysValGluValLys
+
 ```
