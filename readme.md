@@ -5,8 +5,6 @@
 An easy-to-use script that converts **image-based protein sequences**
 in patents to 3-letter coded or 1-letter coded **fasta** format.
 
-Simply take a snapshot of any protein sequences from patents, run it and get your sequence in 3-letter coded and 1-letter coded **fasta** format.
-
 # Dependencies
 
 Install the following modules before running the script:
